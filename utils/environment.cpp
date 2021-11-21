@@ -12,4 +12,5 @@ void environment::set_up_environment(bool live) {
         setenv("APCA_API_KEY_ID", api_key_id.c_str(), 1);
         setenv("APCA_API_SECRET_KEY", api_secret_key.c_str(), 1);
 	setenv("APCA_API_BASE_URL", (live) ? live_trading.c_str() : paper_trading.c_str(), 1);
+        setenv("APCA_API_DATA_URL", data_trading.c_str(), 1);
 }

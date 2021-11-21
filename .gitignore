@@ -37,3 +37,8 @@ api-secret-key
 
 # Bazel
 /bazel-*
+
+# VSCode
+.vscode
+.DS_Store
+compile_commands.json
