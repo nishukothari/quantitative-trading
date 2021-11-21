@@ -18,7 +18,7 @@ int main(int argc, char **argv) {
 	
 	auto asset = client.getAsset("AMZN");
 	if(auto response = asset.first; !response.ok()) {
-		std::cout << "Error getting last quote from API: "
+		std::cout << "Error getting asset from API: "
 		<< response.getMessage()
 		<< "\n";
 	}
